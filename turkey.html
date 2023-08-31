@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flag {
+            background-color: #e30a17;
+            width: 900px;
+            height: 600px;
+            position: absolute;
+            border: 5px solid black;
+        }
+        .flag > div {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: absolute;
+            top:100px;
+            left: 150px;
+        }
+        .flag > div > div {
+            background-color: #e30a17;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: relative;
+            left: 60px;
+            top: 27px;
+        }
+
+        #star-five {
+  position: relative;
+  display: block;
+  color: white;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid white;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+  top: 80px;
+  left: 300px;
+}
+#star-five:before {
+  border-bottom: 80px solid white;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: white;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid white;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div>
+            <div>
+                <div id="star-five">
+        
+                </div>
+            </div>   
+        </div>
+    </div>
+    
+</body>
+</html>
